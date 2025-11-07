@@ -42,12 +42,12 @@ const Footer = () => {
               <li>جدة، المملكة العربية السعودية</li>
               <li>
                 <a 
-                  href="https://wa.me/966500000000" 
+                  href="https://wa.me/966549793708" 
                   className="hover:text-primary transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  واتساب: +966 50 000 0000
+                  واتساب: +966 54 979 3708
                 </a>
               </li>
               <li>
