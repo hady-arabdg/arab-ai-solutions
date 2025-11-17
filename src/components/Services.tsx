@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Globe, ShoppingCart, Network } from "lucide-react";
+import landingImage from "@/assets/service-landing.jpg";
 import ecommerceImage from "@/assets/service-ecommerce.jpg";
 import integrationImage from "@/assets/service-integration.jpg";
 
@@ -9,7 +10,7 @@ const Services = () => {
       icon: Globe,
       title: "صفحات الهبوط",
       description: "تصميم وتطوير صفحات هبوط احترافية مدعومة بالذكاء الاصطناعي لزيادة التحويلات وتحقيق أهدافك التسويقية",
-      image: null,
+      image: landingImage,
     },
     {
       icon: ShoppingCart,
