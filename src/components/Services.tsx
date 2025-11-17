@@ -1,28 +1,24 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Globe, ShoppingCart, Network } from "lucide-react";
-import landingImage from "@/assets/service-landing.jpg";
-import ecommerceImage from "@/assets/service-ecommerce.jpg";
-import integrationImage from "@/assets/service-integration.jpg";
+import { Building2, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
+import realEstateImage from "@/assets/sector-realestate.jpg";
+import servicesImage from "@/assets/sector-services.jpg";
 
 const Services = () => {
-  const services = [
+  const sectors = [
     {
-      icon: Globe,
-      title: "صفحات الهبوط",
-      description: "تصميم وتطوير صفحات هبوط احترافية مدعومة بالذكاء الاصطناعي لزيادة التحويلات وتحقيق أهدافك التسويقية",
-      image: landingImage,
+      icon: Building2,
+      title: "قطاع العقارات",
+      description: "تتبع العملاء المحتملين، الممارسة الصحيحة للبيع عبر واتساب والإيميل، المتابعة والفولو اب الاحترافي، فلترة العملاء، واستخدام خبرات التقفيل",
+      image: realEstateImage,
+      link: "/real-estate",
     },
     {
-      icon: ShoppingCart,
-      title: "التسوق الإلكتروني",
-      description: "منصات تجارة إلكترونية متكاملة مع أنظمة ذكاء اصطناعي لتحليل السلوك وتحسين المبيعات",
-      image: ecommerceImage,
-    },
-    {
-      icon: Network,
-      title: "التناسق بين الشركات",
-      description: "حلول متقدمة لربط وتنسيق العمليات بين الأقسام والشركات التابعة لتحقيق أقصى كفاءة تشغيلية",
-      image: integrationImage,
+      icon: Briefcase,
+      title: "قطاع الخدمات",
+      description: "حلول متكاملة للبيع B2B، بناء وإدارة Sales Funnel احترافي، أتمتة العمليات، وتحسين معدلات التحويل باستخدام الذكاء الاصطناعي",
+      image: servicesImage,
+      link: "/services",
     },
   ];
 
@@ -38,43 +34,44 @@ const Services = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-              خدماتنا
+              قطاعاتنا
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            نقدم حلول ذكاء اصطناعي متكاملة مصممة خصيصاً لتلبية احتياجات الشركات السعودية
+            تحسين العمل الداخلي داخل الشركات من خلال الذكاء الاصطناعي والـ Workflow
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="group bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:shadow-[var(--shadow-card)] hover:scale-105 overflow-hidden animate-slide-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
-            >
-              {service.image && (
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                </div>
-              )}
-              <CardContent className={service.image ? "p-6" : "p-8"}>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 rounded-xl bg-[var(--gradient-primary)] shadow-[var(--shadow-glow)]">
-                    <service.icon className="w-6 h-6 text-primary-foreground" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {sectors.map((sector, index) => (
+            <Link key={index} to={sector.link}>
+              <Card
+                className="group bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/50 transition-all duration-500 hover:shadow-[var(--shadow-card)] hover:scale-105 overflow-hidden animate-slide-up cursor-pointer"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                {sector.image && (
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={sector.image}
+                      alt={sector.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                   </div>
-                  <h3 className="text-2xl font-bold">{service.title}</h3>
-                </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
-              </CardContent>
-            </Card>
+                )}
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="p-3 rounded-xl bg-[var(--gradient-primary)] shadow-[var(--shadow-glow)]">
+                      <sector.icon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <h3 className="text-2xl font-bold">{sector.title}</h3>
+                  </div>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {sector.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
 
