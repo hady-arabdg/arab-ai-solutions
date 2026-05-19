@@ -5,35 +5,33 @@ const Results = () => {
     {
       icon: TrendingUp,
       percentage: "60-90%",
-      title: "Performance Boost",
-      description: "Tangible increase in operational efficiency",
+      title: "تحسين الأداء",
+      description: "زيادة ملموسة في كفاءة العمليات التشغيلية",
     },
     {
       icon: Target,
       percentage: "95%",
-      title: "Solution Accuracy",
-      description: "Custom solutions precisely tailored to your needs",
+      title: "دقة الحلول",
+      description: "حلول مخصصة بدقة لتلبية احتياجاتك",
     },
     {
       icon: Zap,
       percentage: "50%",
-      title: "Time Savings",
-      description: "Reduce time spent on repetitive tasks",
+      title: "توفير الوقت",
+      description: "تقليل الوقت المستغرق في المهام المتكررة",
     },
     {
       icon: Award,
       percentage: "100%",
-      title: "Client Satisfaction",
-      description: "Our commitment to quality reflects in client happiness",
+      title: "رضا العملاء",
+      description: "التزامنا بالجودة ينعكس في سعادة عملائنا",
     },
   ];
 
   return (
     <section id="results" className="py-24 px-4 relative overflow-hidden">
-      {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
 
-      {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-10" style={{
         backgroundImage: 'linear-gradient(hsl(145 85% 35% / 0.3) 1px, transparent 1px), linear-gradient(90deg, hsl(145 85% 35% / 0.3) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
@@ -43,11 +41,11 @@ const Results = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              The Results We Deliver
+              النتائج التي نحققها
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real numbers that reflect the impact of our solutions on partner companies
+            أرقام حقيقية تعكس أثر حلولنا على الشركات الشريكة
           </p>
         </div>
 
@@ -79,7 +77,6 @@ const Results = () => {
           ))}
         </div>
 
-        {/* Quote section */}
         <div className="max-w-4xl mx-auto bg-gradient-to-br from-card/50 to-card/30 backdrop-blur-sm rounded-2xl p-12 border border-primary/20 text-center animate-fade-in">
           <div className="mb-6">
             <svg className="w-16 h-16 mx-auto text-primary/30" fill="currentColor" viewBox="0 0 24 24">
@@ -88,13 +85,13 @@ const Results = () => {
           </div>
 
           <blockquote className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
-            "Arab AI's solutions helped us achieve a major leap in our company's performance, with up to 85% improvement in operational efficiency."
+            "حلول عرب للذكاء الاصطناعي ساعدتنا على تحقيق نقلة كبيرة في أداء شركتنا، بتحسن وصل إلى 85% في كفاءة العمليات."
           </blockquote>
 
           <div className="flex items-center justify-center gap-4">
             <div className="text-center">
-              <div className="font-bold text-lg">Mohammed Al-Otaibi</div>
-              <div className="text-muted-foreground">CEO, Advanced Technology Co.</div>
+              <div className="font-bold text-lg">محمد العتيبي</div>
+              <div className="text-muted-foreground">الرئيس التنفيذي، شركة التقنية المتقدمة</div>
             </div>
           </div>
         </div>

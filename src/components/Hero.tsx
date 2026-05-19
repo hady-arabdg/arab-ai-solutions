@@ -26,17 +26,17 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in">
         <div className="flex items-center justify-center gap-2 mb-6 animate-slide-up">
           <Sparkles className="w-6 h-6 text-secondary" />
-          <span className="text-secondary font-semibold">AI Solutions for Saudi Businesses</span>
+          <span className="text-secondary font-semibold">حلول الذكاء الاصطناعي للشركات السعودية</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-foreground to-secondary bg-clip-text text-transparent animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          Arab AI
+          عرب للذكاء الاصطناعي
         </h1>
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
-          We help companies in the Kingdom streamline operations and internal alignment
+          نساعد الشركات في المملكة على تحسين العمليات والتنسيق الداخلي
           <br />
-          <span className="text-foreground font-semibold">through advanced AI solutions</span>
+          <span className="text-foreground font-semibold">من خلال حلول الذكاء الاصطناعي المتقدمة</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-slide-up" style={{ animationDelay: '0.6s' }}>
@@ -45,7 +45,7 @@ const Hero = () => {
               size="lg"
               className="bg-[var(--gradient-primary)] hover:scale-105 transition-transform shadow-[var(--shadow-glow)] text-lg px-8"
             >
-              Start Your Digital Journey
+              ابدأ رحلتك الرقمية
             </Button>
           </a>
           <a href="#services">
@@ -54,7 +54,7 @@ const Hero = () => {
               variant="outline"
               className="border-primary/50 hover:bg-primary/10 text-lg px-8"
             >
-              Explore Our Sectors
+              استكشف قطاعاتنا
             </Button>
           </a>
         </div>
@@ -63,23 +63,24 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto animate-slide-up" style={{ animationDelay: '0.8s' }}>
           <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-primary/20 hover:border-primary/50 transition-all">
             <div className="text-4xl font-bold text-primary mb-2">60-90%</div>
-            <div className="text-muted-foreground">Performance Improvement</div>
+            <div className="text-muted-foreground">تحسين الأداء</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-primary/20 hover:border-primary/50 transition-all">
-            <div className="text-4xl font-bold text-secondary mb-2">100+</div>
-            <div className="text-muted-foreground">Saudi Companies Trust Us</div>
+            <div className="text-4xl font-bold text-secondary mb-2">+100</div>
+            <div className="text-muted-foreground">شركة سعودية تثق بنا</div>
           </div>
           <div className="bg-card/50 backdrop-blur-sm rounded-xl p-6 border border-primary/20 hover:border-primary/50 transition-all">
             <div className="text-4xl font-bold text-accent mb-2">24/7</div>
-            <div className="text-muted-foreground">Continuous Support</div>
+            <div className="text-muted-foreground">دعم متواصل</div>
           </div>
         </div>
 
         {/* Location badge */}
         <div className="mt-12 flex items-center justify-center gap-2 text-muted-foreground animate-slide-up" style={{ animationDelay: '1s' }}>
           <MessageCircle className="w-5 h-5 text-primary" />
-          <span>Our team is based in Jeddah</span>
+          <span>فريقنا في جدة</span>
         </div>
+
       </div>
 
       {/* Scroll indicator */}
