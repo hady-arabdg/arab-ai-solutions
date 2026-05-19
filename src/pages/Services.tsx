@@ -8,82 +8,82 @@ const ServicesPage = () => {
   const features = [
     {
       icon: Users,
-      title: "إدارة العملاء B2B",
-      description: "نظام متطور لإدارة علاقات العملاء في قطاع الأعمال مع تحليلات ذكية"
+      title: "B2B Client Management",
+      description: "An advanced CRM tailored for B2B with smart analytics.",
     },
     {
       icon: GitBranch,
-      title: "بناء Sales Funnel",
-      description: "تصميم وإدارة قمع المبيعات بشكل احترافي مع تتبع دقيق لكل مرحلة"
+      title: "Sales Funnel Design",
+      description: "Build and manage your sales funnel professionally with precise stage-by-stage tracking.",
     },
     {
       icon: Mail,
-      title: "حملات تسويقية ذكية",
-      description: "حملات بريد إلكتروني وواتساب مخصصة تلقائياً حسب مرحلة العميل"
+      title: "Smart Marketing Campaigns",
+      description: "Email and WhatsApp campaigns automatically tailored to each client's funnel stage.",
     },
     {
       icon: TrendingUp,
-      title: "تحليلات متقدمة",
-      description: "تقارير وتحليلات شاملة لقياس الأداء وتحسين معدلات التحويل"
+      title: "Advanced Analytics",
+      description: "Comprehensive reporting and analytics to measure performance and improve conversion.",
     },
     {
       icon: Zap,
-      title: "أتمتة Workflow",
-      description: "أتمتة كاملة لسير العمل من الاستفسار حتى إتمام الصفقة"
+      title: "Workflow Automation",
+      description: "Full workflow automation from initial inquiry to closed deal.",
     },
     {
       icon: Briefcase,
-      title: "إدارة العروض",
-      description: "إنشاء وإرسال عروض احترافية مخصصة مع متابعة تلقائية"
-    }
+      title: "Proposal Management",
+      description: "Create and send tailored professional proposals with automatic follow-up.",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-32 px-4 overflow-hidden" dir="rtl">
+      <section className="relative py-32 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={sectorImage} 
-            alt="قطاع الخدمات" 
+          <img
+            src={sectorImage}
+            alt="Services Sector"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
         </div>
-        
+
         <div className="container mx-auto relative z-10">
           <Link to="/">
             <Button variant="ghost" className="mb-8">
-              ← العودة للرئيسية
+              ← Back to Home
             </Button>
           </Link>
-          
+
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                حلول الذكاء الاصطناعي
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                AI Solutions
               </span>
               <br />
-              لقطاع الخدمات
+              for the Services Sector
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              نظام متكامل لتحسين العمل الداخلي في شركات الخدمات باستخدام الذكاء الاصطناعي، البيع B2B وإدارة Funnel احترافي
+              An end-to-end system to improve internal operations in service companies through AI, B2B sales, and professional funnel management.
             </p>
           </div>
         </div>
       </section>
 
       {/* Features Grid */}
-      <section className="py-24 px-4" dir="rtl">
+      <section className="py-24 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                المميزات الرئيسية
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Key Features
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              حلول شاملة لإدارة وتحسين عمليات البيع B2B في قطاع الخدمات
+              Comprehensive solutions to manage and grow B2B sales operations in services.
             </p>
           </div>
 
@@ -110,12 +110,12 @@ const ServicesPage = () => {
       </section>
 
       {/* Sales Funnel Process */}
-      <section className="py-24 px-4 bg-card/30" dir="rtl">
+      <section className="py-24 px-4 bg-card/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                مراحل Sales Funnel
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Sales Funnel Stages
               </span>
             </h2>
           </div>
@@ -128,9 +128,9 @@ const ServicesPage = () => {
                     1
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">جذب العملاء المحتملين</h3>
+                    <h3 className="text-2xl font-bold mb-3">Lead Generation</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      استقطاب العملاء من مصادر متعددة وتصنيفهم تلقائياً حسب الاهتمام والجاهزية للشراء مع استخدام أنظمة ذكاء اصطناعي لتقييم جودة كل عميل.
+                      Attract leads from multiple sources and classify them automatically by interest and buying readiness, using AI to score each lead's quality.
                     </p>
                   </div>
                 </div>
@@ -144,9 +144,9 @@ const ServicesPage = () => {
                     2
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">التفاعل والتأهيل</h3>
+                    <h3 className="text-2xl font-bold mb-3">Engagement & Qualification</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      تواصل ذكي ومخصص عبر القنوات المناسبة (واتساب، بريد إلكتروني، مكالمات) مع محتوى مخصص حسب احتياجات كل عميل ومرحلته في رحلة الشراء.
+                      Smart, personalized communication across the right channels (WhatsApp, email, calls) with content tailored to each client's needs and stage in the buying journey.
                     </p>
                   </div>
                 </div>
@@ -160,9 +160,9 @@ const ServicesPage = () => {
                     3
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">التحويل والإغلاق</h3>
+                    <h3 className="text-2xl font-bold mb-3">Conversion & Closing</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      تقديم عروض احترافية مخصصة، متابعة ذكية مع تذكيرات تلقائية، واستخدام أفضل ممارسات B2B لإغلاق الصفقات بنجاح.
+                      Deliver tailored professional proposals, follow up intelligently with automated reminders, and apply B2B best practices to close deals successfully.
                     </p>
                   </div>
                 </div>
@@ -173,26 +173,26 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4" dir="rtl">
+      <section className="py-24 px-4">
         <div className="container mx-auto">
           <Card className="bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-primary/20">
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-bold mb-4">
-                جاهز لتطوير عمليات البيع في شركتك؟
+                Ready to upgrade your sales operations?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                تواصل معنا الآن للحصول على استشارة مجانية وعرض توضيحي للنظام
+                Get in touch for a free consultation and a system demo.
               </p>
-              <a 
-                href="https://wa.me/966500000000" 
-                target="_blank" 
+              <a
+                href="https://wa.me/966549793708"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-[var(--gradient-primary)] hover:scale-105 transition-transform shadow-[var(--shadow-glow)]"
                 >
-                  تواصل معنا عبر واتساب
+                  Chat with us on WhatsApp
                 </Button>
               </a>
             </CardContent>

@@ -8,82 +8,82 @@ const RealEstate = () => {
   const features = [
     {
       icon: Target,
-      title: "تتبع العملاء المحتملين",
-      description: "نظام متقدم لتتبع وإدارة العملاء المحتملين بكفاءة عالية مع تحليلات ذكية"
+      title: "Lead Tracking",
+      description: "An advanced system to track and manage leads efficiently with smart analytics.",
     },
     {
       icon: MessageCircle,
-      title: "البيع عبر واتساب",
-      description: "الممارسة الصحيحة للبيع من خلال واتساب مع أتمتة ذكية للردود والمتابعة"
+      title: "Selling via WhatsApp",
+      description: "Proper sales practices through WhatsApp with smart automation for responses and follow-ups.",
     },
     {
       icon: Mail,
-      title: "حملات البريد الإلكتروني",
-      description: "إدارة احترافية لحملات البريد الإلكتروني مع تخصيص ذكي للرسائل"
+      title: "Email Campaigns",
+      description: "Professional email campaign management with intelligent message personalization.",
     },
     {
       icon: TrendingUp,
-      title: "متابعة احترافية",
-      description: "نظام فولو اب احترافي لضمان عدم فقدان أي فرصة بيعية"
+      title: "Professional Follow-up",
+      description: "A professional follow-up system that ensures no sales opportunity is missed.",
     },
     {
       icon: Filter,
-      title: "فلترة العملاء",
-      description: "تصنيف وفلترة ذكية للعملاء حسب الاهتمام والقدرة الشرائية"
+      title: "Lead Filtering",
+      description: "Smart classification and filtering of leads based on interest and purchasing power.",
     },
     {
       icon: Building2,
-      title: "خبرات التقفيل",
-      description: "استخدام أفضل الممارسات وخبرات التقفيل لزيادة معدلات البيع"
-    }
+      title: "Closing Expertise",
+      description: "Leverage best practices and proven closing techniques to boost conversion rates.",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-32 px-4 overflow-hidden" dir="rtl">
+      <section className="relative py-32 px-4 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={sectorImage} 
-            alt="قطاع العقارات" 
+          <img
+            src={sectorImage}
+            alt="Real Estate Sector"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
         </div>
-        
+
         <div className="container mx-auto relative z-10">
           <Link to="/">
             <Button variant="ghost" className="mb-8">
-              ← العودة للرئيسية
+              ← Back to Home
             </Button>
           </Link>
-          
+
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                حلول الذكاء الاصطناعي
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                AI Solutions
               </span>
               <br />
-              لقطاع العقارات
+              for the Real Estate Sector
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              نظام متكامل لتحسين العمل الداخلي في شركات العقارات باستخدام الذكاء الاصطناعي و Workflow الذكي
+              An end-to-end system to improve internal operations in real estate companies using AI and smart workflows.
             </p>
           </div>
         </div>
       </section>
 
       {/* Features Grid */}
-      <section className="py-24 px-4" dir="rtl">
+      <section className="py-24 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                المميزات الرئيسية
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                Key Features
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              حلول شاملة لإدارة وتحسين عمليات البيع في قطاع العقارات
+              Comprehensive solutions to manage and improve sales operations in real estate.
             </p>
           </div>
 
@@ -110,12 +110,12 @@ const RealEstate = () => {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 px-4 bg-card/30" dir="rtl">
+      <section className="py-24 px-4 bg-card/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-l from-primary to-secondary bg-clip-text text-transparent">
-                كيف يعمل النظام
+              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                How the System Works
               </span>
             </h2>
           </div>
@@ -128,9 +128,9 @@ const RealEstate = () => {
                     1
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">تتبع العملاء المحتملين</h3>
+                    <h3 className="text-2xl font-bold mb-3">Lead Tracking</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      يتم تسجيل وتتبع جميع العملاء المحتملين تلقائياً من مصادر متعددة (الموقع، واتساب، مكالمات، إلخ) مع تصنيف ذكي حسب مستوى الاهتمام.
+                      Every lead is recorded and tracked automatically from multiple sources (website, WhatsApp, calls, etc.) with smart classification by interest level.
                     </p>
                   </div>
                 </div>
@@ -144,9 +144,9 @@ const RealEstate = () => {
                     2
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">التواصل الذكي</h3>
+                    <h3 className="text-2xl font-bold mb-3">Smart Communication</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      إرسال رسائل مخصصة عبر واتساب والبريد الإلكتروني بناءً على سلوك واهتمامات كل عميل، مع اقتراحات ذكية للمحتوى الأنسب.
+                      Send personalized messages via WhatsApp and email based on each client's behavior and interests, with smart content suggestions.
                     </p>
                   </div>
                 </div>
@@ -160,9 +160,9 @@ const RealEstate = () => {
                     3
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold mb-3">المتابعة والتقفيل</h3>
+                    <h3 className="text-2xl font-bold mb-3">Follow-up & Closing</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      نظام متابعة احترافي مع تذكيرات ذكية وخطط عمل مقترحة لكل عميل، مع استخدام أفضل ممارسات التقفيل لزيادة معدلات النجاح.
+                      A professional follow-up system with smart reminders and recommended action plans per client, using proven closing best practices to lift success rates.
                     </p>
                   </div>
                 </div>
@@ -173,26 +173,26 @@ const RealEstate = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-4" dir="rtl">
+      <section className="py-24 px-4">
         <div className="container mx-auto">
           <Card className="bg-gradient-to-br from-card to-card/50 backdrop-blur-sm border-primary/20">
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl font-bold mb-4">
-                جاهز لتحويل شركتك العقارية رقمياً؟
+                Ready to digitally transform your real estate business?
               </h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                تواصل معنا الآن للحصول على استشارة مجانية وعرض توضيحي للنظام
+                Get in touch for a free consultation and a system demo.
               </p>
-              <a 
-                href="https://wa.me/966500000000" 
-                target="_blank" 
+              <a
+                href="https://wa.me/966549793708"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-[var(--gradient-primary)] hover:scale-105 transition-transform shadow-[var(--shadow-glow)]"
                 >
-                  تواصل معنا عبر واتساب
+                  Chat with us on WhatsApp
                 </Button>
               </a>
             </CardContent>
