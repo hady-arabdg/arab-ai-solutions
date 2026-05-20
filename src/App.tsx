@@ -7,23 +7,28 @@ import Index from "./pages/Index";
 import RealEstate from "./pages/RealEstate";
 import ServicesPage from "./pages/Services";
 import NotFound from "./pages/NotFound";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/real-estate" element={<RealEstate />} />
-          <Route path="/services" element={<ServicesPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <LanguageToggle />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/real-estate" element={<RealEstate />} />
+            <Route path="/services" element={<ServicesPage />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </LanguageProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
